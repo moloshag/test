@@ -1,18 +1,18 @@
 package com.example.restservice;
 
+
+
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Getter
 @Setter
+@AllArgsConstructor
 public class Weather {
-    private String fall;
-    private int temp, wind, wet;
-
-    public Weather (String fall, int temp, int wind, int wet) {
-        this.fall = fall;
-        this.temp = temp;
-        this.wind = wind;
-        this.wet = wet;
-    }
+	private String fall;
+	private int temp, wind, wet;
+	private Date date;
 }
